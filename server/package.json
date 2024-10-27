@@ -1,0 +1,38 @@
+{
+  "name": "trackingpatient-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "cross-env NODE_ENV=development node index.js",
+    "start:prod": "cross-env NODE_ENV=production node index.js",
+    "test": "cross-env NODE_ENV=test jest",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "clear-logs": "rimraf ./log",
+    "vercel-build": "echo build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@line/bot-sdk": "^9.2.2",
+    "axios": "^1.7.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-winston": "^4.2.0",
+    "firebase": "^10.12.5",
+    "firebase-admin": "^12.3.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "pdfkit": "^0.15.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.14.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.4",
+    "rimraf": "^6.0.1"
+  }
+}
